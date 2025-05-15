@@ -1,5 +1,5 @@
 # KEYRA: Privacy-Focused Password Manager
-![keyra-lp](https://github.com/user-attachments/assets/cc1023f9-cf83-4e64-881b-f006f49c63b6)
+![keyra-lp](https://github.com/user-attachments/assets/7d2200a8-97e9-4c51-b5d3-e79713f345b4)
 
 ## Overview
 
