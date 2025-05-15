@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+  font-display: swap;
+}
+
+:root {
+  --primary: #a6ccb8;
+  --primary-dark: #8eb3a0;
+  --primary-light: #c0ded0;
+  --background: #000000;
+  --surface: #111111;
+  --surface-2: #1a1a1a;
+  --text: #ffffff;
+  --text-secondary: #a0a0a0;
+  --error: #ef4444;
+  --success: #10b981;
+  --warning: #f59e0b;
+}
+
+@layer base {
+  * {
+    font-family: 'Space Grotesk', system-ui, sans-serif !important;
+  }
+  
+  html {
+    @apply text-white;
+    @apply bg-black;
+  }
+  
+  body {
+    @apply min-h-screen;
+  }
+}
+
+/* Solana Wallet Modal Styles */
+.wallet-adapter-button {
+  @apply bg-[#a6ccb8] hover:bg-[#8eb3a0] text-black font-medium px-6 py-3 rounded-lg transition-all duration-300 flex items-center justify-center hover:shadow-lg hover:shadow-[#a6ccb8]/20 active:transform active:scale-95 !important;
+}
+
+.wallet-adapter-modal-wrapper {
+  @apply bg-[#111111] border border-[#333333] !important;
+}
+
+.wallet-adapter-modal-button-close {
+  @apply bg-[#1a1a1a] text-white hover:bg-[#252525] !important;
+}
+
+.wallet-adapter-modal-title {
+  @apply text-white !important;
+}
+
+.wallet-adapter-modal-content {
+  @apply text-[#a0a0a0] !important;
+}
+
+.wallet-adapter-modal-list {
+  @apply m-0 !important;
+}
+
+.wallet-adapter-modal-list .wallet-adapter-button {
+  @apply bg-[#1a1a1a] text-white hover:bg-[#252525] border border-[#333333] !important;
+}
+
+.wallet-adapter-modal-list-more {
+  @apply text-[#a6ccb8] !important;
+}
+
+
+.custom-wallet-button .wallet-adapter-button {
+  background-color: #a6ccb8 !important;
+  color: black !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  padding: 12px 24px !important;
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  transition: all 0.2s !important;
+  min-width: 200px !important;
+}
+
+.custom-wallet-button .wallet-adapter-button:hover {
+  background-color: #95bba7 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(166, 204, 184, 0.3) !important;
+}
+
+.custom-wallet-button .wallet-adapter-button:active {
+  transform: translateY(0) !important;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-slide-in {
+  animation: slideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
+  to { 
+    opacity: 1;
+    backdrop-filter: blur(8px);
+  }
+}
+
+@keyframes slideIn {
+  from { 
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to { 
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.btn-primary {
+  @apply bg-[#a6ccb8] hover:bg-[#8eb3a0] text-black font-medium px-6 py-3 rounded-lg transition-all duration-300 flex items-center justify-center hover:shadow-lg hover:shadow-[#a6ccb8]/20 active:transform active:scale-95;
+}
+
+.btn-secondary {
+  @apply bg-[#1a1a1a] hover:bg-[#252525] text-white border border-[#333333] font-medium px-6 py-3 rounded-lg transition-all duration-300 flex items-center justify-center hover:border-[#a6ccb8]/30 hover:shadow-lg hover:shadow-[#a6ccb8]/10 active:transform active:scale-95;
+}
+
+.btn-danger {
+  @apply bg-red-600 hover:bg-red-700 text-white font-medium px-6 py-3 rounded-lg transition-all duration-300 flex items-center justify-center hover:shadow-lg hover:shadow-red-500/20 active:transform active:scale-95;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 bg-[#111111] border border-[#333333] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#a6ccb8] focus:border-transparent transition-all duration-300 text-white placeholder-[#666666] hover:border-[#a6ccb8]/30;
+}
+
+.card {
+  @apply bg-[#111111] backdrop-blur-sm rounded-xl p-6 border border-[#333333] transition-all duration-300 hover:border-[#a6ccb8]/20 hover:shadow-lg hover:shadow-[#a6ccb8]/5;
+}
+
+.keyra-title {
+  @apply text-[#a6ccb8] font-bold tracking-tight;
+  text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    0 4px 12px rgba(166, 204, 184, 0.3);
+  letter-spacing: 0.05em;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#1a1a1a];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#333333] rounded-full hover:bg-[#444444] transition-colors;
+}
+
+/* Glass morphism effect for modals */
+.glass-morphism {
+  @apply backdrop-blur-lg bg-black/30;
+}
+
+/* Improved focus styles */
+*:focus-visible {
+  @apply outline-none ring-2 ring-[#a6ccb8] ring-offset-2 ring-offset-black;
+}
