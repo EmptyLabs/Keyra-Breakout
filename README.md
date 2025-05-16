@@ -5,6 +5,21 @@
 
 KEYRA is a secure, privacy-focused password manager that leverages blockchain technology, decentralized storage, and ZKPs. Built on Solana, it utilizes Light Protocol for privacy-preserving transactions and IPFS for encrypted storage, providing a comprehensive solution for securely managing passwords and sensitive information.
 
+## Deployment Information
+
+### Solana Program
+
+- **Program ID**: `2WeZQkQ4cd86G2ymjQLRbCPGUWcipZSdFjsbKv2ArBT3`
+- **Cluster**: Solana Devnet
+
+### Relayer Service
+
+- **Relayer Address**: `AcGNd7QUx7jsy9yhTzc6unMfu9gU1AYL1PXdXz7CM1Tx`
+- **Monitoring Address**: `AcGNd7QUx7jsy9yhTzc6unMfu9gU1AYL1PXdXz7CM1Tx`
+
+### Light Protocol Configuration
+
+- **RPC Endpoint**: Uses Helius API with key `af246a79-****-4fa1-****-d686d9ff37**`
 
 ## Why We Prefer to Use Light Protocol?
 
@@ -352,21 +367,7 @@ The KEYRA password manager implements several security measures:
 | `decryptData()` | Decrypt encrypted data | `encryptedData: string, password: string` |
 | `hashMasterPassword()` | Hash master password | `password: string` |
 
-## Deployment Information
-
-### Solana Program
-
-- **Program ID**: `2WeZQkQ4cd86G2ymjQLRbCPGUWcipZSdFjsbKv2ArBT3`
-- **Cluster**: Solana Devnet
-
-### Relayer Service
-
-- **Relayer Address**: `AcGNd7QUx7jsy9yhTzc6unMfu9gU1AYL1PXdXz7CM1Tx`
-- **Monitoring Address**: `AcGNd7QUx7jsy9yhTzc6unMfu9gU1AYL1PXdXz7CM1Tx`
-
-### Light Protocol Configuration
-
-- **RPC Endpoint**: Uses Helius API with key `af246a79-****-4fa1-****-d686d9ff37**`
+v
 
 ## Troubleshooting
 
