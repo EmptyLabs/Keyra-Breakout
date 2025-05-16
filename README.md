@@ -202,8 +202,7 @@ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "POST",
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/emptylabs/keyra-mvp.git
-   cd keyra
+   git clone https://github.com/EmptyLabs/Keyra-Breakout
    ```
 
 2. Install dependencies
